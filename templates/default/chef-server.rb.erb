@@ -4,8 +4,6 @@ topology "standalone"
 
 api_fqdn "<%= node['chef-server']['api_fqdn'] %>"
 
-fqdn "<%= node['chef-server']['fqdn'] %>"
-
 <% node['chef-server']['configuration'].each_pair do |component, tunables| -%>
 <% case tunables -%>
 <% when Hash -%>
